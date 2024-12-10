@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container {
+            width: 350px;
+            height: 370px;
+            text-align: center;
+            margin: 80px auto;
+            background: rgba(255, 71, 151, 0.501);
+            margin-bottom: 160px;
+            Border-Radius: 20px;
+        }
+
+        #submit {
+            width: 100px;
+            height: 40px;
+            /* Makes the button take up the full width of the container */
+
+            /* Adds space inside the button */
+            font-size: 15px;
+            /* Makes the text larger */
+            border: none;
+            border-radius: 10px;
+            /* Rounds the corners slightly */
+            background-color: #3bdff1b7;
+            /* Adds a background color */
+            color: rgb(49, 48, 48);
+            cursor: pointer;
+            transition: background 0.3s, box-shadow 0.3s;
+            /* Smooth transition */
+        }
+
+
+        #submit:hover {
+            background: linear-gradient(135deg, #48c6ef, #6c63ff);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            color: white;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 300px;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            outline: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+
+        body {
+            background-image: url("/images/Volunteer1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return validateForm()">
+        <div id="container">
+            <h1 Align="Center">Sign Up</h1>
+            <input type="text" id="firstName" placeholder="First Name"><br><br>
+            <input type="text" id="lastName" placeholder="Last Name"><br><br>
+            <input type="email" id="email" placeholder="Email"><br><br>
+            <input type="password" id="password" placeholder="Enter Password"><br><br>
+            Already a Member?
+            <a href="Login.html" style="text-decoration: none;"><b> Login </b></a><br>
+            <button id="submit" type="submit">Submit</button><br><br>
+        </div>
+
+    </form>
+
+
+    <script>
+        function validateForm() {
+            // Get form values
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            // Check if fields are empty
+            if (!firstName) {
+                alert("First Name is required.");
+                return false;
+            }
+            if (!lastName) {
+                alert("Last Name is required.");
+                return false;
+            }
+            if (!email) {
+                alert("Email is required.");
+                return false;
+            }
+            if (!password) {
+                alert("Password is required.");
+                return false;
+            }
+
+            // Email format validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Password length validation
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return false;
+            }
+
+            // If all validations pass
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+
+    </p>
+
+</body>
+
+</html>

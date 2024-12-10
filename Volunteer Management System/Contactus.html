@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="/bootstrap.min.css">
+	<style>
+		body {
+			background-image: url(/Images/Contactus.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			font-family: Arial, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color: #f4f4f9;
+			margin: 0;
+		}
+
+		.contact-container {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			width: 300px;
+			text-align: center;
+		}
+
+		.contact-container h2 {
+			margin-bottom: 15px;
+		}
+
+		.contact-container input,
+		.contact-container textarea,
+		.contact-container button {
+			width: 100%;
+			padding: 10px;
+			margin: 8px 0;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+
+		.contact-container button {
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+		}
+
+		.contact-container button:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="contact-container">
+		<h2>Contact Us</h2>
+		<form>
+			<input type="text" required , placeholder="Your Name">
+			<input type="email" required , placeholder="Your Email">
+			<input type="text" placeholder="Subject">
+			<textarea rows="4" placeholder="Your Message" required></textarea>
+			<button type="submit">Send Message</button>
+		</form>
+	</div>
+</body>
+
+</html>

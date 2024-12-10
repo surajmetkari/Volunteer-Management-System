@@ -1,0 +1,105 @@
+<!-- https://wallpapercave.com/wp/wp9764012.jpg   -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        .bgimage {
+            background-image: url("/images/Volunteer1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        body {
+            background-color: #98cce4c7;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #container {
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+            background: rgba(224, 231, 170, 0.505);
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            outline: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input:focus {
+            border-color: #48c6ef;
+        }
+
+        #submit {
+            background: linear-gradient(135deg, #6c63ff, #48c6ef);
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #submit:hover {
+            background: linear-gradient(135deg, #48c6ef, #6c63ff);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .link {
+            text-decoration: none;
+            color: #291ef5;
+            font-size: 14px;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        #home:hover {
+            text-align: right;
+            color: #48c6ef;
+        }
+    </style>
+</head>
+
+<body class="bgimage">
+
+    <div id="container">
+        <a class="home" href="Index.html">Home</a>
+        <h1>Volunteer Coordinator Login</h1>
+        <input type="text" placeholder="Email"><br>
+        <input type="password" placeholder="Password"><br>
+        <a href="Shiftadd.html">
+            <button id="submit">Login</button>
+        </a>
+    </div>
+
+</body>
+
+</html>

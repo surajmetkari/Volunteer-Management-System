@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Management</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .btndelete {
+            background-color: rgb(35, 27, 255);
+            border-radius: 6px;
+
+        }
+
+        .btn h2 {
+            text-align: center;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        .center-btn {
+            margin-left: 50%;
+        }
+
+        .header-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #4293a3;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .shift-table {
+            margin-top: 20px;
+        }
+
+        .btn-signup {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!------Navbar ---------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Volunteer Program</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="opportunity.html">Opportunities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Signup.html">Sign Up Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Sign In</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header-section">
+        <h1>Shift Management</h1>
+        <p>Select a shift that works best for you and sign up to help.</p>
+    </div>
+
+    <!-- Shift Table -->
+    <div class="container">
+        <h2>Shifts List</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Spots Available</th>
+                    <th>Action</th> <!-- Added Action column for Delete button -->
+                </tr>
+            </thead>
+            <tbody id="shifts-table-body">
+                <!-------- Data will be dynamically inserted here    ---------- -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-4 p-4 bg-light">
+        <p>&copy; 2024 Volunteer Program Portal.</p>
+    </footer>
+
+    <script src="showdata.js"></script>
+</body>
+
+</html>
